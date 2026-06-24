@@ -5,13 +5,17 @@ import Task1 from './component/task1.js';
 import Empty from './component/empty.js';
 import CustomerAdd from './component/customerAdd.js';
 import CustomerView from './component/customerView.js';
+import { Provider } from 'react-redux'
+import {store} from "./component/store"
 
 
 function App() {
   return (
-    <div className="App">
-     <CustomerAdd/>
-    </div>
+      <Provider store = {store}>
+  <h1>Redux Toolit</h1>
+    <CustomerAdd></CustomerAdd>
+    <CustomerView></CustomerView>
+   </Provider>
     
   );
 }
