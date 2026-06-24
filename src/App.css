@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+
+/****user details css****/
+ul.userdetails-json {
+    text-align: left;
+}
+
+ul.userdetails-json li b {
+    padding-left: 10px;
+}
